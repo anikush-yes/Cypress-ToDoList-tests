@@ -16,14 +16,15 @@ describe('First Test', () => {
   describe('Header Text Test', () => {
     it('Checks if <header> contains "To Do List"', () => {
       cy.visit('https://todolist.james.am/#/'); 
-      cy.get('header').should('be.visible').and('contain.text', 'To Do List'); 
+      cy.get('header h1').should('be.visible').and('have.text', 'To Do List');
     });
   });
 
   describe('Footer Text Test', () => {
     it('Checks if <footer> contains the text "Double-click to edit a todo"', () => {
       cy.visit('https://todolist.james.am/#/'); // Aplankome svetainę
-      cy.get('footer p').should('be.visible').and('contain.text', 'Double-click to edit a todo'); // Patikriname tekstą
+      cy.get('footer.info p').should('exist');
+      cy.get('footer.info p').should('be.visible').and('have.text', 'Double-click to edit a toodo'); // Patikriname tekstą. //gramatinė klaida"..toodo vietoj "todo"
     });
   });
 
@@ -31,7 +32,7 @@ describe('First Test', () => {
   describe('Input Placeholder Test', () => {
     it('Checks if input has the placeholder "What needs to be done?"', () => {
       cy.visit('https://todolist.james.am/#/'); 
-      cy.get('input').should('have.attr', 'placeholder', "What need's to be done?"); 
+      cy.get('input.new-todo').should('have.attr', 'placeholder', "What need's to be done?"); 
     });
   });
 
@@ -45,7 +46,7 @@ describe('First Test', () => {
       cy.get('input.new-todo').type('3 task{enter}');
   
       
-      cy.get('.todo-list li') 
+      cy.get('ul.todo-list li') 
         .should('exist') 
         .and('have.length.at.least', 3);
     });
