@@ -1,4 +1,4 @@
-🚀 <h1 'Cypress Test Suite' >
+🚀 <h1 'Cypress Test Suite' </h1>
 Welcome to the Cypress Test Suite! 🎯 This project contains automated tests written with Cypress for a web application. These tests ensure that the application functions correctly and provide a smooth user experience. 🧪✨
 
 📌 Features
