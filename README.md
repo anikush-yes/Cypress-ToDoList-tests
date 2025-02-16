@@ -40,6 +40,8 @@ This will launch the Cypress Test Runner, where you can select and run the tests
 
 npx cypress run
 
+### Ensure the cy.visit URL is correct and accessible before running the tests.
+
 # 🧪Test Cases
 
 The test suite includes the following:
@@ -82,11 +84,10 @@ Edits an existing task and verifies the updated text.
 
 ## 🗒️ Notes
 
-The test for footer text contains a typo in "toodo" instead of "todo".
+• The test for footer text contains a typo in "toodo" instead of "todo".
 
-The placeholder test should check for "What needs to be done?" instead of "What need's to be done?".
+• The placeholder test should check for "What needs to be done?" instead of "What need's to be done?".
 
-Ensure the cy.visit URL is correct and accessible before running the tests.
 
 ## 🪪 License
 
