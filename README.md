@@ -28,13 +28,13 @@ npm install
 
 # 🚀Running Tests
 
-To execute the Cypress tests, use the following command:
+### To execute the Cypress tests, use the following command:
 
 npx cypress open
 
 This will launch the Cypress Test Runner, where you can select and run the tests.
 
-Alternatively, to run the tests in the command line:
+### Alternatively, to run the tests in the command line:
 
 npx cypress run
 
