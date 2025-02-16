@@ -19,12 +19,12 @@ Cypress
 ## ⚙️ Installation
 
 ### Clone the repository:
-
+```
 git clone https://github.com/anikush-yes/Cypress-ToDoList-tests
 <br>
 <br>
 cd your-repository-folder
-
+```
 ### Install dependencies:
 
 npm install
@@ -32,15 +32,15 @@ npm install
 # 🚀Running Tests
 
 ### To execute the Cypress tests, use the following command:
-
+```
 npx cypress open
-
+```
 This will launch the Cypress Test Runner, where you can select and run the tests.
 
 ### Alternatively, to run the tests in the command line:
-
+```
 npx cypress run
-
+```
 ### Ensure the cy.visit URL is correct and accessible before running the tests.
 ***
 # 🧪Test Cases
