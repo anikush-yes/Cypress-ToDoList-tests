@@ -6,7 +6,7 @@
 This project contains automated tests for the (https://todolist.james.am/#/) application using Cypress.
 
 The test suite covers various aspects of the application's functionality, ensuring elements are visible and interactive, tasks can be created, edited, and deleted properly.
-
+***
 ## 📃 Prerequisites
 
 ### Before running the tests, ensure you have the following installed:
