@@ -14,6 +14,7 @@ The test suite covers various aspects of the application's functionality, ensuri
 Node.js
 
 Cypress
+```
 ***
 ## ⚙️ Installation
 
