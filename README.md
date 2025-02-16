@@ -20,6 +20,7 @@ Cypress
 ### Clone the repository:
 
 git clone https://github.com/anikush-yes/Cypress-ToDoList-tests
+<br>
 cd your-repository-folder
 
 ### Install dependencies:
