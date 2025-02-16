@@ -1,7 +1,7 @@
 
-# 🚀Cypress Test Suite for To-Do List Application
+# ✔️Cypress Test Suite for To-Do List Application
 
-Overview
+## 🪟 Overview
 
 This project contains automated tests for the To-Do List application using Cypress.
 
