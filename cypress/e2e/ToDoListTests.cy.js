@@ -67,7 +67,7 @@ describe('Each test includes visiting the website', () => {
       cy.contains('ul.todo-list li', 'task to be deleted').find('button.destroy').invoke('show');
       cy.contains('ul.todo-list li', 'task to be deleted').find('button.destroy').click();
 
-      cy.contains('ul.todo-list li', 'task to  be deleted').should('not.exist');
+      cy.contains('ul.todo-list li', 'task to be deleted').should('not.exist');
 
     });
   });
