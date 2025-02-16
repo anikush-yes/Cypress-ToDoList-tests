@@ -10,7 +10,7 @@ The test suite covers various aspects of the application's functionality, ensuri
 ## 📃 Prerequisites
 
 ### Before running the tests, ensure you have the following installed:
-
+```
 Node.js
 
 Cypress
