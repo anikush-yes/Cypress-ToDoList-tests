@@ -14,7 +14,7 @@ The test suite covers various aspects of the application's functionality, ensuri
 Node.js
 
 Cypress
-
+***
 ## ⚙️ Installation
 
 ### Clone the repository:
@@ -27,7 +27,7 @@ cd your-repository-folder
 ### Install dependencies:
 
 npm install
-
+***
 # 🚀Running Tests
 
 ### To execute the Cypress tests, use the following command:
@@ -41,7 +41,7 @@ This will launch the Cypress Test Runner, where you can select and run the tests
 npx cypress run
 
 ### Ensure the cy.visit URL is correct and accessible before running the tests.
-
+***
 # 🧪Test Cases
 
 The test suite includes the following:
@@ -81,13 +81,13 @@ Adds a task and then deletes it, confirming its removal.
 ### 9️⃣ Edit To-Do List Item Test
 
 Edits an existing task and verifies the updated text.
-
+***
 ## 🗒️ Notes
 
 • The test for footer text contains a typo in "toodo" instead of "todo".
 
 • The placeholder test should check for "What needs to be done?" instead of "What need's to be done?".
-
+***
 
 ## 🪪 License
 
