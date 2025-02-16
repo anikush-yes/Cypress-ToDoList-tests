@@ -3,11 +3,11 @@
 
 ## 🪟 Overview
 
-This project contains automated tests for the To-Do List application using Cypress.
+This project contains automated tests for the [<To-Do List>](https://todolist.james.am/#/) application using Cypress.
 
 The test suite covers various aspects of the application's functionality, ensuring elements are visible and interactive, tasks can be created, edited, and deleted properly.
 
-Prerequisites
+## 📃 Prerequisites
 
 Before running the tests, ensure you have the following installed:
 
@@ -15,18 +15,18 @@ Node.js
 
 Cypress
 
-Installation
+## ⚙️ Installation
 
-Clone the repository:
+### Clone the repository:
 
-git clone <repository-url>
+git clone <[repository-url](https://github.com/anikush-yes/Cypress-ToDoList-tests)>
 cd <repository-folder>
 
-Install dependencies:
+### Install dependencies:
 
 npm install
 
-Running Tests
+# 🚀Running Tests
 
 To execute the Cypress tests, use the following command:
 
@@ -38,47 +38,47 @@ Alternatively, to run the tests in the command line:
 
 npx cypress run
 
-Test Cases
+# 🧪Test Cases
 
 The test suite includes the following:
 
-1. Visiting the Website
+### 1️⃣ Visiting the Website
 
 Ensures the application is accessible before each test.
 
-2. Header Element Test
+### 2️⃣ Header Element Test
 
 Checks if the <header> is visible on the page.
 
-3. Header Text Test
+### 3️⃣ Header Text Test
 
 Verifies if the header contains the text "To Do List".
 
-4. Create New To-Do Test
+### 🍀 Create New To-Do Test
 
 Tests adding a new to-do item and verifies its presence in the list.
 
-5. Footer Text Test
+### 5️⃣ Footer Text Test
 
 Checks if the footer contains the correct text: "Double-click to edit a todo".
 
-6. Input Placeholder Test
+### 6️⃣ Input Placeholder Test
 
 Ensures the input field has the correct placeholder: "What needs to be done?".
 
-7. Add Multiple Tasks Test
+### 7️⃣ Add Multiple Tasks Test
 
 Adds multiple tasks and ensures the list contains at least three items.
 
-8. Delete To-Do List Task Test
+### 8️⃣ Delete To-Do List Task Test
 
 Adds a task and then deletes it, confirming its removal.
 
-9. Edit To-Do List Item Test
+### 9️⃣ Edit To-Do List Item Test
 
 Edits an existing task and verifies the updated text.
 
-Notes
+## 🗒️ Notes
 
 The test for footer text contains a typo in "toodo" instead of "todo".
 
@@ -86,6 +86,6 @@ The placeholder test should check for "What needs to be done?" instead of "What 
 
 Ensure the cy.visit URL is correct and accessible before running the tests.
 
-License
+## 🪪 License
 
 This project is open-source and available under the MIT License.
