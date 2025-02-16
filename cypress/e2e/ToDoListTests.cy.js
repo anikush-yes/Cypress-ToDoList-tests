@@ -74,7 +74,7 @@ describe('Each test includes visiting the website', () => {
 
 
   describe('Edit To-Do List Item Test', () => {
-    it('To do item edit', () => {
+    it('To do item edit after double click', () => {
 
       cy.get('input.new-todo').type('1 task{enter}');
       cy.get('input.new-todo').type('2 task{enter}');
