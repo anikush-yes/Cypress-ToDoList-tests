@@ -55,19 +55,17 @@ describe('Check if website allows creating a cookie', () => {
 
 
     beforeEach(() => {
-        cy.session('sesija', () => {
-            cy.visit('https://todolist.james.am/#/');
-            cy.get('input.new-todo').type('1 uzduotis{enter}');
-        });
+        cy.visit('https://todolist.james.am/#/');
+        cy.get('input.new-todo').type('1 uzduotis{enter}');
     });
     
     it('Testas su sesija', () => {
-        cy.visit('https://todolist.james.am/#/');
         cy.get('.todo-list').should('contain', '1 uzduotis');
     });
     
     it('Testas be sesijos', () => {
-        cy.visit('https://todolist.james.am/#/');
+        cy.clearLocalStorage(); // Jei užduotys saugomos localStorage
+        cy.reload(); // Perkrauna puslapį, kad išvalytų DOM būseną
         cy.get('.todo-list').should('not.contain', '1 uzduotis');
     });
 });
