@@ -89,6 +89,28 @@ describe('Each test includes visiting the website', () => {
       cy.contains('ul.todo-list li', 'edited task').should('be.visible');
 
     });
-  });
 
+
+    Cypress.Commands.add('addToDos', () => {
+      cy.visit('https://todolist.james.am/#/');
+      cy.get('input.new-todo').type('1 uzduotis{enter}');
+      cy.get('input.new-todo').type('trinama uzduotis{enter}');
+      cy.get('input.new-todo').type('1 uzduotis{enter}');
+      cy.get('input.new-todo').type('trinama uzduotis{enter}');
+      cy.get('input.new-todo').type('1 uzduotis{enter}');
+      cy.get('input.new-todo').type('trinama uzduotis{enter}');
+  });
+  
+  describe('Edit To-Do List Item Test', () => {
+      beforeEach(() => {
+          cy.clearLocalStorage();
+          cy.clearCookies();
+          cy.addToDos();
+      });
+  
+      it('Patikrina, ar užduotys pridėtos', () => {
+          cy.get('.todo-list li').should('have.length', 6);
+      });
+  });
+});
 });
